@@ -1,6 +1,6 @@
 #incentiva pocos movimientos
 steps = params ["steps"]
 progress = params ["progress"]
-step_rewars = (progress / steps) * 10
+step_rewards = (progress / steps) * 10
 
 reward += step_reward
