@@ -1,0 +1,15 @@
+# intentiva que vaya más rapido en las rectas y frene en las curvas
+steering_angle = params ["steering_angle"]
+speed = params ["seepd"]
+if -5 < steering_angle < 5:
+  if speed > 2.5:
+    reward += 2.0
+  elif speed > 2:
+    rewad += 1.0
+elif steering_angle < -15 or steering_angle > 15:
+  if speed < 1.8:
+    reward += 1.0
+  elif speed < 2.2:
+    reward += 0.5
+
+return float (reward)
