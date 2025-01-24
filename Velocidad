@@ -1,6 +1,6 @@
 # intentiva que vaya más rapido en las rectas y frene en las curvas
 steering_angle = params ["steering_angle"]
-speed = params ["seepd"]
+speed = params ["speed"]
 if -5 < steering_angle < 5:
   if speed > 2.5:
     reward += 2.0
